@@ -1,0 +1,395 @@
+/* Importação das fonts utilizadas no projeto - Roboto, Fjalla One */
+@import url('https://fonts.googl\eapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    /* color: #000; */
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Fjalla One', 'Roboto', sans-serif;
+    font-size: 18pt;
+    color: #DFA801;
+    text-decoration: none;
+}
+
+#admin nav{
+    background-color: #000;
+    /* margin-left: 25vh; */
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#admin nav ul{
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+#admin nav ul li{
+    float: left;
+    /*padding: 10px;*/
+}
+
+#admin nav ul li.right{
+    float: right;
+}
+
+#admin nav ul li a{
+    display: block;
+    align-items: center;
+    padding: 15px 10px;
+    transition: 0.3s;
+}
+
+#admin nav ul li p{
+    display: block;
+    color: #FFF;
+    font-size: 18pt;
+    font-weight: 700;
+    align-items: center;
+    padding: 10px 10px;
+    transition: 0.3s;
+}
+
+#admin nav ul li a:hover{
+    color: #000;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* color: #F00; */
+}
+
+#admin .sidenav {
+    height: 100%;
+    width: 25vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+#admin .sidenav a {
+    padding: 6px 8px 6px 16px;
+    outline: 0;
+    text-decoration: none;
+    font-size: 16pt;
+    color: #818181;
+    display: block;
+    border-bottom: 1px solid lightgrey;
+    transition: 0.3s;
+    padding: 10px 10px 10px 30px;
+}
+
+#admin .sidenav a:hover {
+    color: #000;
+}
+
+#admin .sidenav a.active{
+    color: #000;
+}
+
+#admin .main {
+    margin-top: 20px;
+    margin-left: 25vh;
+    padding: 30px;
+}
+
+@media screen and (max-height: 450px) {
+    #admin .sidenav {
+        padding-top: 15px;
+    }
+
+    #admin .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#admin .content{
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+#admin .content .header{
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#admin table {
+    font-size: 11pt;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#admin table td, th{
+    padding: 10px 10px 10px 20px;
+    /* line-height: 60px; */
+    border-bottom: 1px solid #DDD;
+}
+
+#admin tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#admin table td.actions a{
+    color: #000;
+    padding-right: 20px;
+    transition: 0.3s;
+    opacity: 0.4;
+}
+
+#admin table td.actions a:hover{
+    opacity: 1;
+}
+
+/* table td a.actions{
+    margin-right: 10px;
+} */
+
+#admin .form{
+    margin: 40px;
+    padding: 10px;
+}
+
+#admin .form h3{
+    margin-bottom: 20px;
+}
+
+#admin form input {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#admin form textarea{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 60%;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 5px ;
+    padding: 10px;
+    /* transition: 0.1s; */
+    cursor: pointer;
+}
+
+#admin form input:focus{
+    border: 1px solid #000;
+}
+
+#admin form textarea:focus{
+    border: 1px solid #000;
+}
+
+#admin form select{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    outline: 0;
+    border: 1px solid lightgray;
+    border-radius: 5px ;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#admin form .group {
+    display: flex;
+    width: 60%;
+    /* padding-right: 10px; */
+}
+
+#admin form .group input{
+    width: auto;
+    margin-right: 50px;
+}
+
+#admin a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+button{
+    border: 1px solid #FFF;
+    color: #FFF;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    background: transparent;
+    width: 100px;
+    height: 40px;
+    opacity: 0.7;
+    transition: 0.3s;
+    margin-top: 10px;;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#admin .pagination{
+    margin: 15px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#admin .pagination a {
+    font-size: 14px;
+    padding-right: 20px;
+    color: #DDD;
+    transition: 0.3s;
+}
+
+#admin .pagination a:hover{
+    color: #000;
+}
+
+#admin .pagination a.active{
+    color: #000;
+}
+
+.danger{
+    background-color: #F00;
+}
+
+.success{
+    background-color: #28a745;
+}
+
+.text-white{
+    color: #FFF;
+}
+
+.text-black{
+    color: #000;
+}
+
+#species .card-group{
+    display: inline-grid;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+@media screen and (max-width: 1366px){
+
+    #species .card-group{
+        display: inline-grid;
+        justify-content: center;
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+
+}
+
+.fadein-left{
+    /* margin-left: 100px; */
+    animation: moveLeft 2s forwards;
+}
+
+.fadein-center{
+    /* margin-left: 100px; */
+    animation: showCenter 2s forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 5vw;
+    }
+}
+
+@keyframes showCenter {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#species .card-size {
+    width: 350px;
+    height: 550px;
+}
+
+#species .line-search{
+    /* display: flex; */
+    margin-top: 63.5px;
+}
+
+
+#user .personal-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    /* border: 1px solid yellow; */
+}
+
+#user .personal-photo img {
+    display: block;
+    margin: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+    color: gray;
+    margin-top: 50px;
+}
+
+.banner-home{
+    width: 100%;
+    height: 400px;
+    background-image: url('./../img/home1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-banner {
+    font-weight: 700;
+    font-size: 20pt;
+    width: 500px;
+}
+
+.teste{
+    height: 500px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 20px;
+}
+
+.icons img {
+    margin-right: 100px;
+    width: 100px;
+}
